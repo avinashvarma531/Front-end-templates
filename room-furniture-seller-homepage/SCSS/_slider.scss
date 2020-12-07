@@ -1,0 +1,108 @@
+.banner{
+    
+    .hero{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        &-picture{
+            width: 100%;
+            height: 70vh;
+            position: relative;
+
+            .hero-img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+    
+            .slider-btns{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                display: flex;
+                
+                img{
+                    background-color: $blk;
+                    padding: 1rem 2rem;
+
+                    &:hover{
+                        cursor: pointer;
+                        background-color: $vdg;
+                    }
+                }
+            }
+        }
+    
+        &-content{
+            height: 100%;
+
+            .wrapper{
+                width: 75%;
+                margin: 2.5rem auto;
+            }
+    
+            &-heading{
+                font-weight: 700;
+                font-size: 2rem;
+                margin: 1rem 0;
+            }
+    
+            &-context{
+                font-size: 14px;
+                font-weight: 500;
+                color: $dg;
+                line-height: 1.5;
+                margin: 1rem 0 3rem;
+            }
+    
+            .shop-now{
+                text-transform: uppercase;
+                letter-spacing: 0.8rem;
+                font-size: 0.9rem;
+
+                &:hover{
+                    cursor: pointer;
+                    color: $dg;
+
+                    img{
+                        opacity: 0.35;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-md{
+    .hero{
+        flex-direction: row !important;
+
+        &-picture{
+            flex-basis: 55%;
+            height: 60vh !important;
+
+            .hero-img{
+                object-position: center !important;
+            }
+
+            .slider-btns{
+                transform: translateX(100%);
+            }
+        }
+
+        &-content{
+            flex-basis: 45%;
+
+            .wrapper{
+                width: 70% !important;
+            }
+
+            &-context{
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

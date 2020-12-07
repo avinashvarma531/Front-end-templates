@@ -1,0 +1,14 @@
+@import './config';
+@import './slider';
+@import './about';
+
+body{
+    background-color: $wht;
+    font-family: 'Spartan', sans-serif;
+}
+
+@include media-md{
+    body{
+        overflow: hidden;
+    }
+}
