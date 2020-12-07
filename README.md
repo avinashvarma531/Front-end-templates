@@ -1,2 +1,2 @@
 # Front-end Templates
-This work contains HTML and CSS templates, design ideas etc.
+This repo contains HTML, CSS and JS templates, design ideas etc.
